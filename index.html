@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/c5aebde23c.js" crossorigin="anonymous"></script>
+
+    <title>Carousel</title>
+
+    <style>
+        .slide-conteudo {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        h3 {
+            padding: 2%;
+        }
+
+        h6 {
+            padding-bottom: 1%;
+        }
+
+        p {
+            padding: 1%;
+        }
+
+        .conteudo-do-slide {
+            padding: 5%;
+            margin-top: 15%;
+        }
+
+        .treco {
+            padding: 3%;
+        }        
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+
+            <a href="" class="navbar-brand">Dev School</a>
+
+            <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <!-- Carousel -->
+    <section id="carousel" style="background-color: #a8a8a8;">
+
+        <div class="carousel slide" data-bs-ride="carousel" id="slide" data-bs-interval="2000">
+
+            <!-- Indicators-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slide" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slide" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slide" data-bs-slide-to="2"></button>
+            </div>
+
+
+            <!-- Slide -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container-fluid slide-conteudo">
+                        <h3>É novo por aqui?</h3>
+                        <div class="conteudo-do-slide">
+                            <h6>Seja bem-vindo! Estamos muito felizes de tê-lo por aqui!</h6>
+                            <button class="btn btn-primary btn-lg">Crie uma conta!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container-fluid slide-conteudo">
+                        <h3>Procurando por boas ofertas?</h3>
+                        <div class="conteudo-do-slide">
+                            <h6>A Dev School prioriza a sua formação e por isso oferece os melhores preços!</h6>
+                            <button class="btn btn-primary btn-lg">Confira o melhor preço da cidade!</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container-fluid slide-conteudo">
+                        <h3>A Dev School está cheia de novidades essa semana!</h3>
+                        <div class="conteudo-do-slide">
+                            <h6>Não perca essa oportunidade! Cursos com até 80% de desconto</h6>
+                            <button class="btn btn-primary btn-lg">Confira as ofertas dessa semana!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Botões de navegação -->
+            <button type="button" class="carousel-control-prev" data-bs-target="#slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button type="button" class="carousel-control-next" data-bs-target="#slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Grid Layout -->
+    <section id="grid-layout" style="padding: 7% 15%; text-align: center;">
+        
+        <h2 style="padding-bottom: 10%;">Linguagens de programação ensinadas na Dev School</h2>   
+
+        <div class="row" style="text-align: center;">
+            <div class="col-lg-3 treco">
+                <i class="fab fa-python fa-4x"></i>
+                <h3>Python</h3>
+                <p>Linguagem versátil usada para análise de dados, desenvolvimento web, automoção, big data e muito mais!</p>
+            </div>
+
+            <div class="col-lg-3 treco">
+                <i class="fab fa-js-square fa-4x"></i>
+                <h3>JavaScript</h3>
+                <p>Linguagem usada no desenvolvimento web e mobile. Antes restrita ao client side, hoje é amplamente usada no server side.</p>
+            </div>
+
+            <div class="col-lg-3 treco">
+                <i class="fab fa-php fa-4x"></i>
+                <h3>PHP</h3>
+                <p>Linguagem voltada para a parte Back-end do desenvolvimento web. Está há muito tempo no mercado e foi a linguagem usada na criação do Facebook.</p>
+            </div>
+
+            <div class="col-lg-3 treco">
+                <i class="fab fa-java fa-4x"></i>
+                <h3>Java</h3>
+                <p>Linguagem extremamente versátil. Pode ser usada para programar tudo, desde relógios e televisões até desenvolvimento mobile e de games.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section id="footer" class="bg-dark text-white" style="text-align: center; padding: 3% 9%">
+        <p>Feito por @Henrique Angelin</p>
+        <a href="https://github.com/zHenryTM" target="_blank"><i class="fab fa-github fa-2x text-white"></i></a>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
